@@ -1,5 +1,9 @@
+
+
 before_script:
+
 - cd src/tecTapecaria
+
 language: java
 jdk:
  - oraclejdk8
