@@ -1,12 +1,13 @@
 services:
--postgresql
+  - postgresql
 
 before_script:
--psql -c 'create database tapecaria;' -U postgres
--psql -U postgres -d tapecaria -f BD/creates.sql
--psql -U postgres -d tapecaria -f BD/inserts.sql
+  - psql -c 'create database tapecaria;' -U postgres
+  -psql -U postgres -d tapecaria -f BD/creates.sql
+  -psql -U postgres -d tapecaria -f BD/inserts.sql
 - cd src/tecTapecaria
-
+addons:
+  postgresql: "9.6"
 language: java
 jdk:
  - oraclejdk8
