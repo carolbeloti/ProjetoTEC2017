@@ -1,4 +1,5 @@
-create table usuarios(
+﻿       
+create table usuarios(      
 	id serial primary key,
 	nome varchar(50) not null,
 	login varchar(20) not null,
@@ -11,18 +12,23 @@ create table estados(
 	sigla varchar(2) not null
 );
 
-create table cidades(
-	id serial primary key,
-	nome varchar(100) not null,
-	id_estado int not null,
-    constraint fk_id_estado foreign key (id_estado) references estados (id)
+
+CREATE TABLE cidades (
+    id serial primary key,
+    nome character varying,
+    codigo_ibge integer,
+    estado_id integer,
+    populacao_2010 integer,
+    densidade_demo numeric,
+    gentilico character varying(250),
+    area numeric
 );
 
-create table clientes(
+create table clientes(--criar um, eu
 	id serial primary key, 
 	nome varchar(100) not null,
 	cpf varchar(11) not null,
-	endereco varchar(200),
+	rua varchar(200),
 	cep varchar(12),
 	bairro varchar(50),
 	id_cidade int not null, 
@@ -30,10 +36,10 @@ create table clientes(
     constraint fk_id_cidade foreign key (id_cidade) references cidades (id)
 );
 
-create table produtos(
+create table produtos( --ert , sofa, poltrona, almofada, puff, banco de automoveis, cadeira
 	id serial primary key,
 	nome varchar(50) not null,
-	valor decimal (9,2)
+	valor decimal
 );
 
 create table vendas(
