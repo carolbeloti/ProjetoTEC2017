@@ -2,7 +2,7 @@
 insert into usuarios (nome,login,senha) values ('adimistrador','adm', 123456)
 insert into usuarios (nome,login,senha) values ('Maria','maria', 'maria123')
 
-insert into clientes (nome, cpf, rua, cep,bairro,id_cidade, telefone) values ('Marina', 08405412343, 'Avenida Brasil','0830000','Centro',1,35562109 )
+insert into Cliente (nome, cpf, rua, cep,bairro,id_cidade, telefone) values ('Marina', 08405412343, 'Avenida Brasil','0830000','Centro',1,35562109 )
 
 insert into produtos (nome, valor) values ('Sofá', 800)
 insert into produtos (nome, valor) values ('Poltrona',300)

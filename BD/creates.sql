@@ -24,7 +24,7 @@ CREATE TABLE cidades (
     area numeric
 );
 
-create table clientes(--criar um, eu
+create table Cliente(--criar um, eu
 	id serial primary key, 
 	nome varchar(100) not null,
 	cpf varchar(11) not null,
