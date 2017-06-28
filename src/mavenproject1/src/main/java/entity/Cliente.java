@@ -10,7 +10,7 @@ import javax.persistence.Id;
  
 /**
 *
-* @author Camila Venâncio
+* @author Camila 
 */
 @Entity
 public class Cliente implements Serializable {

@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Angelino
+ * @author Camila
  */
 public interface ClienteDao {
     

@@ -14,7 +14,7 @@ import org.hibernate.cfg.Configuration;
 
 /**
  *
- * @author Angelino
+ * @author Camila
  */
 
 
