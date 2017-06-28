@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+     xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Gerenciador de Tapeçaria</title>
+    </h:head>
+    <h:body>
+
+
+     
+        <h:form>
+            
+            <h:panelGrid columns="3" cellpadding="5">
+
+                <h1>Cadastro de Clientes</h1>
+                <br />
+               
+                <h:outputLabel value="Name:" />
+
+                <h:inputText value="#{controller.cliente.nome}"/>
+            
+                <br />
+
+                <h:outputLabel value="Rua:" />
+                <h:inputText value="#{controller.cliente.rua}"/>
+              
+                <br />
+                <h:outputLabel value="Bairro" />
+                <h:inputText value="#{controller.cliente.bairro}"/>
+               
+                <br />
+
+                <h:outputLabel value="Telefone:" />
+                <h:inputText value="#{controller.cliente.telefone}"/><br/>
+
+                <h:outputLabel value="CPF:" />
+                <h:inputText value="#{controller.cliente.cpf}"/><br/>
+                <h:outputLabel value="ID Cidade:" />
+                <h:inputText value="#{controller.cliente.id_cidade}"/><br/>
+                
+          
+
+                <h:commandButton action="#{controller.adicionarClientes}" value="Inserir Novo Cliente"/>
+                <h:commandButton action="#{controller.alterarClientes}" value="Alterar Cliente"/>
+                <br/>
+                <h:commandLink action="#{index}" value="Voltar"/>
+
+
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
