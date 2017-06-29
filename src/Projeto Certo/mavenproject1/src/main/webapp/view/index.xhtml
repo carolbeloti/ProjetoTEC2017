@@ -1,0 +1,72 @@
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+   
+    <h:head>
+        <title>Gerenciador de Clientes</title>
+    </h:head>
+    <h:body>
+        <h1>Gerenciador de Clientes</h1>
+        <h:dataTable var="livro" value="#{controller.listarCliente}">
+             <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Nome"/>
+                </f:facet>
+                <h:outputText value="#{controller.cliente.nome}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Rua"/>
+                </f:facet>
+                <h:outputText value="#{controller.cliente.rua}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Bairro"/>
+                </f:facet>
+                <h:outputText value="#{controller.cliente.bairro}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="CEP"/>
+                </f:facet>
+                <h:outputText value="#{controller.cliente.cep}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="CPF"/>
+                </f:facet>
+                <h:outputText value="#{controller.cliente.cpf}"/>
+            </h:column>
+          
+            
+           
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value=""/>
+                </f:facet>
+                <h:form>
+                    <h:commandButton action="#{controller.alterarClientes}" value="Alterar"/>
+                    </h:form>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value=""/>
+                </f:facet>
+                <h:form>
+                    <h:commandButton action="#{controller.excluirClientes}" value="Excluir"/>
+                    </h:form>
+            </h:column>
+        </h:dataTable>
+        <br/>
+        <h:form>
+            <h:commandLink value="Novo Cliente" action="#{controller.prepararAdicionarClientes}"/>
+        </h:form>
+   </h:body>
+</html>
+
