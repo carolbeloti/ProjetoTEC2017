@@ -1,15 +1,14 @@
-﻿       
-insert into usuarios (nome,login,senha) values ('adimistrador','adm', 123456)
-insert into usuarios (nome,login,senha) values ('Maria','maria', 'maria123')
+﻿      
+insert into usuarios (nome,login,senha) values ('adimistrador','adm', '123456');
+insert into usuarios (nome,login,senha) values ('Maria','maria', 'maria123');
+insert into usuarios (nome,login,senha) values ('Carol', 'carol', 'admin');
 
-insert into Cliente (nome, cpf, rua, cep,bairro,id_cidade, telefone) values ('Marina', 08405412343, 'Avenida Brasil','0830000','Centro',1,35562109 )
-
-insert into produtos (nome, valor) values ('Sofá', 800)
-insert into produtos (nome, valor) values ('Poltrona',300)
-insert into produtos (nome, valor) values ('Almofada', 50)
-insert into produtos (nome, valor) values ('Puff', 400)
-insert into produtos (nome, valor) values ('Cadeira', 250)
-insert into produtos (nome, valor) values ('Banco para Automóveis', 350)
+insert into produtos (nome, valor) values ('Sofá', 800);
+insert into produtos (nome, valor) values ('Poltrona',300);
+insert into produtos (nome, valor) values ('Almofada', 50);
+insert into produtos (nome, valor) values ('Puff', 400);
+insert into produtos (nome, valor) values ('Cadeira', 250);
+insert into produtos (nome, valor) values ('Banco para Automóveis', 350);
 
 INSERT INTO estados VALUES (1, 'Acre', 'AC');
 INSERT INTO estados VALUES (2, 'Alagoas', 'AL');
@@ -5609,4 +5608,4 @@ INSERT INTO cidades VALUES (5563, 'Tupiratins', 172130, 27, 2097, 2.34, 'tupirat
 INSERT INTO cidades VALUES (5565, 'Xambioá', 172210, 27, 11484, 9.68, 'xambioaense', 1186.424);
 
 
-
+insert into Cliente (nome, cpf, rua, cep,bairro,id_cidade, telefone) values ('Marina', '08405412343', 'Avenida Brasil','0830000','Centro',1,'35562109' );

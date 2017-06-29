@@ -24,7 +24,7 @@ CREATE TABLE cidades (
     area numeric
 );
 
-create table Cliente(--criar um, eu
+create table cliente(
 	id serial primary key, 
 	nome varchar(100) not null,
 	cpf varchar(11) not null,
@@ -36,7 +36,7 @@ create table Cliente(--criar um, eu
     constraint fk_id_cidade foreign key (id_cidade) references cidades (id)
 );
 
-create table produtos( --ert , sofa, poltrona, almofada, puff, banco de automoveis, cadeira
+create table produtos( 
 	id serial primary key,
 	nome varchar(50) not null,
 	valor decimal
@@ -52,6 +52,6 @@ create table vendas(
 	data_inicio date,
 	data_entrega date,
     constraint fk_id_produto foreign key (id_produto) references produtos (id),
-    constraint fk_id_cliente foreign key (id_cliente) references clientes (id),
+    constraint fk_id_cliente foreign key (id_cliente) references cliente (id),
     constraint fk_id_usuario foreign key (id_usuario) references usuarios (id)
 );
