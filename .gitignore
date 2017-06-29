@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /src/tecTapecaria/target/.gitignore
 /tecTapecaria/target/.gitignore
 /src/mavenproject1/target/.gitignore
+=======
+/src/tecTapecaria/target/
+/tecTapecaria/target/
+/src/mavenproject1/target/
+>>>>>>> 7096507fe57b7475e3d907283e2c2e0ea8ab9e6d
